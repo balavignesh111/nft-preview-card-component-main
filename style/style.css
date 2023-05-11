@@ -29,18 +29,30 @@ body{
 .image{
   width: 14rem;
 }
+.image a:hover{
+  background-color: hsl(178, 100%, 50%);
+}
 .image img{
   width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 .img-ethereum{
   border-radius: 10px;
 }
 /* content style starts here! */
 .content h3{
-  color: hsl(0, 0%, 100%);
   padding: 1rem 0rem;
   font-weight: 600;
   font-size: 1rem;
+}
+.content a{
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+.content a:hover{
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
 }
 .content p{
   color: hsl(215, 51%, 70%);
@@ -84,25 +96,21 @@ body{
 }
 /* content- footer starts here!  */
 .content-footer{
-  margin: 0.8rem 0rem;
+  margin: 0.8rem 0rem 0rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /* align-items: center; */
+  align-items: start;
 }
 .footer-img{
   width: 1.4rem;
-  border: 1px solid hsl(0, 0%, 100%);
-  border-radius: 50%;
-  margin-right: 0.8rem;
 }
 .footer-img img{
   width: 100%;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
 }
 .content-footer small{
   color: hsl(215, 51%, 70%);
-  padding-top: 0.3rem;
-}
-.content-footer span{
-  color: hsl(0, 0%, 100%);
+  padding: 0rem 0.8rem;
 }
