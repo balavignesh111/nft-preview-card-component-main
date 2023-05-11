@@ -60,14 +60,23 @@ body{
   font-weight: 300;
   font-size: 0.8rem;
 }
-/* content ether value and duartion value */
+/* content ether value and duaration value */
 .content-value{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start;
 }
 /* ether logo and its value */
+.ether-cnt, .time-cnt{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* above code is to make logo and value center */
+
 .ether-img{
   display: inline-block;
   width: 0.5rem;
@@ -77,6 +86,7 @@ body{
 }
 .ether-cnt small{
   color: hsl(178, 100%, 50%);
+  padding-left: 0.5rem;
 }
 /* time logo and its content */
 .time-img{
@@ -88,6 +98,7 @@ body{
 }
 .time-cnt small{
   color: hsl(215, 51%, 70%);
+  padding-left: 0.5rem;
 }
 .horizontal-line{
   size: 5px;
@@ -100,15 +111,22 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: start;
+  align-items: center;
 }
 .footer-img{
   width: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .footer-img img{
   width: 100%;
+  height: auto;
+  object-fit: contain;
   border: 1px solid hsl(0, 0%, 100%);
   border-radius: 50%;
+  align-self: center;
 }
 .content-footer small{
   color: hsl(215, 51%, 70%);
