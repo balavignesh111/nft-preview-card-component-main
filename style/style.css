@@ -28,18 +28,56 @@ body{
 /* box ethereum image style starts here!*/
 .image{
   width: 14rem;
+  position: relative;
 }
-.image a:hover{
+/* .image:hover{
   background-color: hsl(178, 100%, 50%);
-}
+} */
 .image img{
   width: 100%;
   height: auto;
   object-fit: contain;
 }
+
 .img-ethereum{
   border-radius: 10px;
+} 
+
+/* overlay effect */
+.overlay{
+  background-color: hsl(178, 100%, 50%,0.5);
+  width: 100%;
+  height: 252px;
+  border-radius: 10px;  
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
+
+.overlay-visibility{
+  display: none;
+}
+
+/* mouse over effect worked here!!!! */
+.image:hover .overlay-visibility{
+  display: block;
+}
+
+/* eye icon */
+.eye-icon{
+  width:2rem;
+  height: auto;
+}
+.eye-icon img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
 /* content style starts here! */
 .content h3{
   padding: 1rem 0rem;
@@ -60,7 +98,7 @@ body{
   font-weight: 300;
   font-size: 0.8rem;
 }
-/* content ether value and duaration value */
+/* content ether value and duration value */
 .content-value{
   display: flex;
   flex-direction: row;
